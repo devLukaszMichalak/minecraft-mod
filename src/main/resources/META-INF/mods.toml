@@ -1,0 +1,25 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)"
+license="MIT"
+[[mods]] #mandatory
+modId="lukestorches" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Luke's torches" #mandatory
+logoFile="examplemod.png" #optional
+credits="Mod by devLukaszMichalak" #optional
+authors="devLukaszMichalak" #optional
+description='''
+This is a torch mod
+'''
+[[dependencies.lukestorches]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[40,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.lukestorches]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
