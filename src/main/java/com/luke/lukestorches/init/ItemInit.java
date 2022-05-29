@@ -14,6 +14,9 @@ public class ItemInit {
     public static final RegistryObject<Item> END_TORCH = register("end_torch",
             () -> new Item(new Item.Properties().tab(LukesTorches.TORCHES_TAB)));
 
+    public static final RegistryObject<Item> END_DUST = register("end_dust",
+            () -> new Item(new Item.Properties().tab(LukesTorches.TORCHES_TAB)));
+
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
         return ITEMS.register(name, item);
     }

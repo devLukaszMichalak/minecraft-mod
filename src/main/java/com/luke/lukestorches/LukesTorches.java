@@ -19,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.lwjgl.system.CallbackI;
 import org.slf4j.Logger;
 
 import java.util.stream.Collectors;
@@ -34,7 +35,8 @@ public class LukesTorches
         @Override
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
-            return new ItemStack(ItemInit.END_TORCH.get());
+            ItemStack itemStackIcon = new ItemStack(ItemInit.END_DUST.get());
+            return itemStackIcon;
         }
     };
 
