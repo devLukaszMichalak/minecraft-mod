@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "X"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "lukestorches:void_dust",
+    "count": 2
+  }
+}
