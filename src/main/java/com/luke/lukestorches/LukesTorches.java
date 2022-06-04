@@ -1,5 +1,6 @@
 package com.luke.lukestorches;
 
+import com.luke.lukestorches.init.BlockInit;
 import com.luke.lukestorches.init.ItemInit;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -51,6 +52,7 @@ public class LukesTorches
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
 

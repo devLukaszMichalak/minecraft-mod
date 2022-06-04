@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lukestorches:block/example_block"
+    }
+  }
+}
