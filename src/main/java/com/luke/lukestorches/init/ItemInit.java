@@ -10,12 +10,8 @@ import net.minecraftforge.registries.RegistryObject;
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, LukesTorches.MOD_ID);
-
-    public static final RegistryObject<Item> END_TORCH = register("end_torch",
-            () -> new Item(new Item.Properties().tab(LukesTorches.TORCHES_TAB)));
-
-    public static final RegistryObject<Item> END_DUST = register("end_dust",
-            () -> new Item(new Item.Properties().tab(LukesTorches.TORCHES_TAB)));
+    public static final RegistryObject<Item> VOID_DUST = register("void_dust",
+            () -> new Item(new Item.Properties().tab(LukesTorches.LUKES_MOD)));
 
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item){
         return ITEMS.register(name, item);

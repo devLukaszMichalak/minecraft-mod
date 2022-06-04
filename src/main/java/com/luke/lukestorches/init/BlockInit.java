@@ -20,11 +20,13 @@ public class BlockInit {
             DeferredRegister.create(ForgeRegistries.BLOCKS, LukesTorches.MOD_ID);
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 
-
-    //public static final RegistryObject<Block> EXAMPLE_BLOCK = registerBlock() //if no item with block
-
-    public static final RegistryObject<Block> EXAMPLE_BLOCK = register("example_block", () ->
-            new Block(BlockBehaviour.Properties.of(Material.DIRT, MaterialColor.COLOR_MAGENTA).strength(1.0f).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(LukesTorches.TORCHES_TAB)));
+    public static final RegistryObject<Block> VOID_BLOCK = register("void_block", () ->
+            new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_MAGENTA)
+                    .strength(1.0f)
+                    .sound(SoundType.AMETHYST)
+                    .requiresCorrectToolForDrops()
+                    .lightLevel(l->7))
+            , object -> () -> new BlockItem(object.get(), new Item.Properties().tab(LukesTorches.LUKES_MOD)));
 
 
 

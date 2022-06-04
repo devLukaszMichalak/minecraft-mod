@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "lukestorches:example_block"
+          "name": "lukestorches:void_block"
         }
       ]
     }
